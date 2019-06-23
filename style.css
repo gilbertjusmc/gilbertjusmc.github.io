@@ -1,12 +1,15 @@
 .test{
-    background-color: lightslategray;
+    background-color: lightgray;
 }
 
-#about-me{
-    border: 3px solid black;
+.container{
+    border: 1px solid black;
 }
 
 .section-heading{
-    border: 1px dotted black;
-    
+    border: 1px dotted black;    
+}
+
+.main-footer{
+    text-align: center;   
 }
