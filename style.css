@@ -1,12 +1,13 @@
 #main-header{
     text-align: center;
+    color: bisque;
     font-size: 30px;
     background-repeat: no-repeat;
     background-image: url(./images/title_img.jpg);
     background-position: 50% 50%;
     min-height: 0px;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 #code {
@@ -33,12 +34,12 @@
     list-style-type: none;
 }
 
-.main-footer h1{
-    color: antiquewhite;
+.main-footer {
+    color: lightgray;
 }
 
 .whole-page{
-    background-color: lightgray;
+    background-color: antiquewhite;
 }
 
 .section-heading{
@@ -48,4 +49,26 @@
 
 .main-footer{
     text-align: center;   
+}
+
+@media (max-width: 500px){
+    #code {
+        width: 100%;
+        float: none;
+    }
+
+    #work {
+        width: 100%;
+        float: none;
+    }
+
+    #miat {
+        width: 100%;
+        float: none;
+    }
+
+    #usmc {
+        width: 100%;
+        float: none;
+    }
 }
