@@ -1,6 +1,7 @@
 #main-header{
     text-align: center;
-    color: bisque;
+    text-shadow: 3px 2px black;
+    color: lightgreen;
     font-size: 30px;
     background-repeat: no-repeat;
     background-image: url(./images/title_img.jpg);
@@ -8,6 +9,10 @@
     min-height: 0px;
     padding-top: 100px;
     padding-bottom: 50px;
+}
+
+#about-me {
+    text-decoration: underline;
 }
 
 #code {
