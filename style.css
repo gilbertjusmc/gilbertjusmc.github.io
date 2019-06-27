@@ -25,7 +25,7 @@
 
 .wrapper > div {
     background: #eee;
-    padding: 10px;
+    padding: 1em;
     box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
@@ -60,5 +60,5 @@
 
 .contact {
     text-align: center;
-    
+    font-size: 20px;
 }
