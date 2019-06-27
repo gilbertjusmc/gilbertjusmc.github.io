@@ -8,8 +8,9 @@
     background-image: url(./images/title_img.jpg);
     background-position: 50% 50%;
     min-height: 300px;
+    z-index: -1;
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 50px; 
 }
 
 #about-me {
