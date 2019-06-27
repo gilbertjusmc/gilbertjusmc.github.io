@@ -24,7 +24,8 @@
 
 .wrapper > div {
     background: #eee;
-    padding: 1em;
+    padding: 10px;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
 .bullet {
@@ -32,10 +33,11 @@
     text-align: justify;
 }
 
-.blog {
+.me {
     background: #eee;
     list-style-type:none ;
     text-align: center;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
 .main-footer {
@@ -43,7 +45,7 @@
 }
 
 .whole-page{
-    background-color: antiquewhite;
+    background-color: lightgray;
 }
 
 .section-heading{
@@ -60,6 +62,9 @@
     
 }
 
-@media {
-    
+@media screen and (max-width: 700px) {
+    .grid-container {
+        display: grid;
+        grid
+    }
 }
