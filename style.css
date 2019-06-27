@@ -39,7 +39,7 @@
 }
 
 .main-footer {
-    color: lightgray;
+    color: grey;
 }
 
 .whole-page{
@@ -53,4 +53,13 @@
 
 .main-footer{
     text-align: center;   
+}
+
+.contact {
+    text-align: center;
+    
+}
+
+@media {
+    
 }
