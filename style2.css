@@ -1,0 +1,78 @@
+html{
+    box-sizing: border-box;
+    color:black;
+}
+
+body{
+    background: grey;
+    margin: 20px 40px;
+    line-height: 1.2;
+}
+
+.title {
+    text-align: center;
+}
+
+.wrapper{
+    display: grid;
+    grid-gap: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* container */
+.container .header {
+    display: grid;
+    min-height: 400px;
+    min-width: max-content;
+    background: url(images/title_img.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    text-align: center;
+    font-size: 60px;
+    text-shadow: 3px 2px black;
+    color: lightgreen;
+}
+
+.container{
+    display: grid;
+    grid-gap: 10px;
+}
+
+.grid {
+    background: lightgray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 40px;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+
+
+.life-img {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+}
+
+.life-img img {
+    width: 100%;
+    box-shadow: 0 1px 5px black;
+}
+
+footer {
+    margin-top: 20px;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+footer .contact {
+    font-size: 30px;
+}
