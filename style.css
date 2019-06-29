@@ -1,3 +1,10 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
 html{
     box-sizing: border-box;
     color:black;
@@ -13,7 +20,7 @@ body{
     text-align: center;
 }
 
-.wrapper{
+.wrapper {
     display: grid;
     grid-gap: 10px;
 }
@@ -47,9 +54,18 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 40px;
+    grid-gap: 20px;
     border: 1px black solid;
     padding: 20px;
+}
+
+.grid-2{
+    background: lightgray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    border: 1px black solid;
+    padding: 10px;
 }
 
 
