@@ -13,7 +13,6 @@ img {
     max-width: 100%;
 }
 
-/* container */
 header {
     min-height: 400px;
     font-size: 40px;
@@ -31,18 +30,11 @@ header {
     font-size-adjust: 60px;
 }
 
-/* 
-.container{
-    display: grid;
-    grid-gap: 10px;
-}
-*/
-
 .grid {
     background: lightgray;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(auto-fit, auto);
+    grid-template-rows: repeat(auto, auto);
     grid-gap: 20px;
     border: 1px black solid;
 }
@@ -77,3 +69,8 @@ footer .contact {
     font-size: 30px;
 }
 
+@media (){
+    .grid {
+
+    }
+}
