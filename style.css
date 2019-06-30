@@ -62,7 +62,7 @@ img {
 .grid-2{
     background: lightgray;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-gap: 5px;
     border: 1px black solid;
     padding: 10px;
@@ -91,4 +91,8 @@ footer {
 
 footer .contact {
     font-size: 30px;
+}
+
+@media (){
+    
 }
