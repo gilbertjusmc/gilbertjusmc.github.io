@@ -1,0 +1,29 @@
+*{
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    opacity: 1;
+    font-size: 1.5em;
+    font-weight: 400;
+    transition: 200ms;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+header {
+    display: grid;
+}
+
+body {
+    display: grid;
+}
+
+footer {
+    display: grid;
+}
