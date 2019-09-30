@@ -1,29 +1,52 @@
-*{
-    background-color: white;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-    opacity: 1;
-    font-size: 1.5em;
-    font-weight: 400;
-    transition: 200ms;
-}
-
-ul {
-    list-style-type: none;
-
-}
-
-header {
-    display: grid;
+/* Start from ground zero */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-    display: grid;
+    
 }
 
-footer {
-    display: grid;
+.page {
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.section {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Basic Mobile */
+@media only screen and (max-width: 400px) {
+    .nav,
+    .name,
+    .slogan,
+    .projects,
+    .aboutMe
+    .contact {
+        width: 50%
+    }
+    body {
+        background-color:white;
+    }
+}
+
+/* Basic Tablet */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+      background-color: white; /* Yellow */
+    }
+  }
+
+/* Basic Browser */
+@media only screen and (min-width: 961px) {
+    body {
+      background-color: white; /* Blue */
+    }
+  }
