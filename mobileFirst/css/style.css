@@ -1,0 +1,65 @@
+:root {
+    --primary-color: #fefefe; 
+    --secondary-color: #024478;
+    --highlight-color: #adb1bb;
+    --main-text-color: #000000;
+    --contrast-text-color: #e5e6e6; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4rem;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+.landingPage {
+    color: var(--contrast-text-color);
+    height: 100vh;
+    position: relative;
+}
+
+.landingPage:before {
+    content:'';
+    background: url(/images/KVjRfkTn.jpeg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.landingPage .landingPage-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.landingPage h1{
+    font-size: 4rem;
+    line-height: 4rem;
+    text-shadow: #000000;
+}
+
+.landingPage h2 {   
+    font-size: 1.3rem;
+    text-shadow: #000000;
+}
+
+

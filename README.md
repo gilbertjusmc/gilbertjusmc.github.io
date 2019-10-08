@@ -1,8 +1,6 @@
 # gilbertjusmc.github.io
-Personal web page for Vets Who Code
+Personal web page for Vets Who Code Capstone project
 
 
-Pallete colors from my favorite site:
-
-Favorite Site:  Instagram
-http://palette.site/palettes/8d1860
+Pallete colors from my favorite site: http://www.garysheng.com
+http://palette.site/palettes/46b7a3
