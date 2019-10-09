@@ -5,71 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jason Gilbert</title>
-    <link rel="stylesheet" href="../mobileFirst/css/menu.css">
     <link rel="stylesheet" href="../mobileFirst/css/style.css">
     <script src="https://kit.fontawesome.com/e6744c452b.js" crossorigin="anonymous"></script>
     <title>Jason Gilbert</title>
 </head>
 <body>
     <!-- Logo and Nav -->
-    <nav class="menu-wrap">
-        <input type="checkbox" class="toggle">
-        <div class="hamburger"><div></div></div>
-        <div class="menu">
-            <div>
-                <div>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+    <header class="header">
+        <a href="/" class="logo">JG</a>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <ul class="menu">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#AboutMe">About Me</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+    </header>
+
+    <section class="landingPage">
+        <div class="container landingPage-inner">
+            <h1>Jason Gilbert</h1>
+            <h2>Nature, Kindness, Development</h2>
         </div>
+    </section>
 
-        <header class="landingPage">
-            <div class="container landingPage-inner">
-                <h1>Jason Gilbert</h1>
-                <h2>Nature, Kindness, Development</h2>
-            </div>
-        </header>
-
-    </nav>
+    
 
     <!-- Logo and Nav END -->
-    
-    <!-- Landing Page 
-    <section class="landingPage">
-        <div class="picture">
-            <img src="" alt="">
-            <p class="name">Jason Gilbert</p>
-        </div>
-        
-    </section>
-    Landing Page END -->
 
     <!-- Projects -->
     <section class="project1">
-        <div>
-
-        </div>
+        <div class="projectBorder"></div>
         <h3 class="project1Title">Project 1</h3>
     </section>
+
     <section class="project2">
-        <div></div>
+        <div class="projectBorder"></div>
         <h3 class="project2Title">Project 2</h3>
     </section>
-    <section class="project3">
-        <div>
 
-        </div>
+    <section class="project3">
+        <div class="projectBorder"></div>
         <h3 class="project3Title">Project 3</h3>
     </section>
-    <section class="project4">
-        <div>
 
-        </div>
+    <section class="project4">
+        <div class="projectBorder"></div>
         <h3 class="project4Title">Project 4</h3>
     </section>
     <!-- Projects END -->
