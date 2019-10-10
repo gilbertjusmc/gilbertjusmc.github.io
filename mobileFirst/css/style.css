@@ -97,6 +97,8 @@ header .menu-btn:checked ~ .menu {
     max-height: 240px;
 }
 
+
+
 footer {
     display: flex;
     align-content: center;
