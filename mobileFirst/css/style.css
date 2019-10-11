@@ -13,7 +13,7 @@ a {
 }
 
 .btn, .btn-dark, .btn-light {
-    display: block;
+    display: inline-block;
     padding: 0.5rem 1rem;
     border: 0;
     margin-bottom: 0.3rem; 
@@ -35,7 +35,7 @@ a {
 }
 
 .header {
-    background-color: lightgray;
+    background-image: lightgray;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, .1); 
     position: fixed;
     width: 100%;
@@ -135,8 +135,9 @@ a {
 
 .projects {
     display: grid;
-    grid-gap: 0.7rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.6rem;
+    grid-template-columns: 1fr;
+    padding: .6rem;
 }
 
 .projects img {
