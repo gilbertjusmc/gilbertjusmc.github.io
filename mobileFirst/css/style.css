@@ -12,6 +12,28 @@ a {
     text-decoration: none;
 }
 
+.btn, .btn-dark, .btn-light {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem; 
+}
+  
+.btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #eece1a;
+    color: #000; 
+}
+  
+.btn-dark {
+    background: black;
+    color: #fff; 
+}
+  
+.btn-light {
+    background: #c4c4c4;
+    color: #333; 
+}
+
 .header {
     background-color: lightgray;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, .1); 
@@ -109,7 +131,53 @@ a {
 .header .menu-btn:checked ~ .menu-icon .nav-icon:after {
     transform: rotate(45deg);
     top: 0;
+} 
+
+.projects {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
 }
+
+.projects img {
+    width: 100%;
+    border: 2px solid #000000;
+}
+
+.projects img:hover {
+    opacity: .5;
+    border-color: #024478;
+    transition: all .5s ease-out;
+}
+
+/*Contact Style
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem; 
+}
+  
+.boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; 
+}
+  
+.boxes div:hover {
+    padding: 0.5rem 1.5rem;
+    background: #eece1a;
+    color: #000; 
+}
+  
+.boxes div:hover span {
+        color: #000; 
+    }
+Contact style END */ 
+
 
 footer {
     display: flex;
