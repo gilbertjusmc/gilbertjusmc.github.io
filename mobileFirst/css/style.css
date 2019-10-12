@@ -1,3 +1,9 @@
+
+
+html {
+    font-size: 10px; /* Sets the standard conversion for rem, vh etc... */
+}
+
 * {
     box-sizing: border-box;
 }
@@ -6,6 +12,32 @@ body {
     background-color: rgb(199, 199, 199);
     height: 100%;
     margin: 0;
+    line-height: 1.2;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: 500;
+}
+
+.landing-page h1 {
+    font-size: 6rem;
+}
+
+.landing-page h2 {
+    font-size: 4rem;
+    padding: .2rem 1rem;
+}
+
+.landing-page {
+    color: #aaa;
+    padding: 6rem;
+    height: 100%;
+    background: url(/images/KVjRfkTn.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 a {
@@ -35,11 +67,10 @@ a {
     color: #333; 
 }
 
-.header {
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 1); 
+.header { 
     position: fixed;
     width: 100%;
-    z-index: 3;
+    z-index: 2;
 }
 
 .header ul {
@@ -55,12 +86,6 @@ a {
     padding: 10px;
     border-right: 1px solid #aaa;
     text-decoration: none;
-}
-
-.header .logo {
-    float: left;
-    font-size: 2rem;
-    padding: 5px 10px;
 }
 
 .header ul a:hover {
