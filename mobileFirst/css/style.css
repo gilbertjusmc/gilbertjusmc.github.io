@@ -53,8 +53,8 @@ a {
 }
   
 .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
-    color: #000; 
+    background:#024478;
+    color: #fefefe; 
 }
   
 .btn-dark {
@@ -63,12 +63,13 @@ a {
 }
   
 .btn-light {
-    background: #c4c4c4;
-    color: #333; 
+    background: #fff;
+    color: black; 
 }
 
 .header { 
     position: fixed;
+    height: 100%;
     width: 100%;
     z-index: 2;
 }
@@ -78,7 +79,7 @@ a {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: rgb(199, 199, 199);
+    background-color: #adb1bb;
 }
 
 .header ul a {
@@ -89,7 +90,7 @@ a {
 }
 
 .header ul a:hover {
-    background-color: slategray;
+    background-color: #adb1bb;
 }
 
 .header .menu {
@@ -106,16 +107,17 @@ a {
 }
 
 .header .menu-icon .nav-icon {
-    background: darkgray;
+    background: #adb1bb;
     display: block;
     height: 2px;
     width: 18px;
     position: relative;
     transition: background .2s ease-out;
+    box-shadow: 1px #adb1bb;
 }
 
 .header .menu-icon .nav-icon:before {
-    background: darkgray;
+    background: #adb1bb;
     content: '';
     display: block;
     height: 100%;
@@ -126,7 +128,7 @@ a {
 }
 
 .header .menu-icon .nav-icon:after {
-    background: darkgray;
+    background:#adb1bb;
     content: '';
     display: block;
     height: 100%;
