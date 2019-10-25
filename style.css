@@ -1,24 +1,22 @@
-
-
-html {
-    font-size: 10px; /* Sets the standard conversion for rem, vh etc... */
-}
-
 * {
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;  /* Sets the standard conversion for rem, vh etc... */
+}
+
 body {
     background-color: rgb(199, 199, 199);
-    height: 100%;
-    margin: 0;
-    line-height: 1.2;
+    height          : 100%;
+    margin          : 0;
+    line-height     : 1.2;
 }
 
 h1,
 h2,
 h3 {
-    margin: 0;
+    margin     : 0;
     font-weight: 500;
 }
 
@@ -28,64 +26,64 @@ h3 {
 
 .landing-page h2 {
     font-size: 4rem;
-    padding: .2rem 1rem;
+    padding  : .2rem 1rem;
 }
 
 .landing-page {
-    color: #aaa;
-    padding: 6rem;
-    height: 100%;
-    background: url(/images/KVjRfkTn.jpeg);
-    background-size: cover;
+    color                : #aaa;
+    padding              : 6rem;
+    height               : 100%;
+    background           : url(/images/KVjRfkTn.jpeg);
+    background-size      : cover;
     background-attachment: fixed;
 }
 
 a {
-    color: black;
+    color          : black;
     text-decoration: none;
 }
 
 .btn, .btn-dark, .btn-light {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border: 0;
-    margin-bottom: 0.3rem; 
+    display      : inline-block;
+    padding      : 0.5rem 1rem;
+    border       : 0;
+    margin-bottom: 0.3rem;
 }
   
 .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background:#024478;
-    color: #fefefe; 
+    background: #024478;
+    color     : #fefefe;
 }
   
 .btn-dark {
     background: black;
-    color: #fff; 
+    color     : #fff;
 }
   
 .btn-light {
     background: #fff;
-    color: black; 
+    color     : black;
 }
 
 .header { 
     position: fixed;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
+    height  : 100%;
+    width   : 100%;
+    z-index : 2;
 }
 
 .header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
+    margin          : 0;
+    padding         : 0;
+    list-style      : none;
+    overflow        : hidden;
     background-color: #adb1bb;
 }
 
 .header ul a {
-    display: block;
-    padding: 10px;
-    border-right: 1px solid #aaa;
+    display        : block;
+    padding        : 10px;
+    border-right   : 1px solid #aaa;
     text-decoration: none;
 }
 
@@ -94,47 +92,47 @@ a {
 }
 
 .header .menu {
-    clear: both;
+    clear     : both;
     max-height: 0;
     transition: max-height .2s ease-out;
 }
 
 .header .menu-icon {
-    padding: 20px 20px;
+    padding : 20px 20px;
     position: relative;
-    float: right;
-    cursor: pointer;
+    float   : right;
+    cursor  : pointer;
 }
 
 .header .menu-icon .nav-icon {
     background: #adb1bb;
-    display: block;
-    height: 2px;
-    width: 18px;
-    position: relative;
+    display   : block;
+    height    : 2px;
+    width     : 18px;
+    position  : relative;
     transition: background .2s ease-out;
     box-shadow: 1px #adb1bb;
 }
 
 .header .menu-icon .nav-icon:before {
     background: #adb1bb;
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 5px;
+    content   : '';
+    display   : block;
+    height    : 100%;
+    width     : 100%;
+    position  : absolute;
+    top       : 5px;
     transition: all .2s ease-out;
 }
 
 .header .menu-icon .nav-icon:after {
-    background:#adb1bb;
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: -5px;
+    background: #adb1bb;
+    content   : '';
+    display   : block;
+    height    : 100%;
+    width     : 100%;
+    position  : absolute;
+    top       : -5px;
     transition: all .2s ease-out;
 }
 
@@ -152,45 +150,50 @@ a {
 
 .header .menu-btn:checked ~ .menu-icon .nav-icon:before {
     transform: rotate(-45deg);
-    top: 0;
+    top      : 0;
 }
 
 .header .menu-btn:checked ~ .menu-icon .nav-icon:after {
     transform: rotate(45deg);
-    top: 0;
+    top      : 0;
 } 
 
 .projects {
-    display: grid;
-    grid-gap: 0.6rem;
+    display              : grid;
+    grid-gap             : 0.6rem;
     grid-template-columns: 1fr;
-    padding: .6rem;
+    padding              : 1rem;
 }
 
-.projects img {
-    width: 100%;
+.project-item img {
+    width : 100%;
     border: 2px solid #000000;
 }
 
-.projects img:hover {
-    opacity: .5;
+.project-item img:hover {
+    opacity     : .5;
     border-color: #024478;
-    transition: all .5s ease-out;
+    transition  : all .5s ease-out;
+}
+
+.project-item {
+    align-items: center;
+    justify-content: center;
 }
 
 .contact {
-    display: grid;
-    grid-column: 1fr 1fr;
-    align-items: stretch;
+    display        : grid;
+    grid-column    : 1fr 1fr;
+    align-items    : center;
     justify-content: center;
-    font-size: 2rem;
-    align-content: center;
+    font-size      : 2rem;
+    align-content  : center;
 }
 
 footer {
-    display: flex;
-    align-content: center;
-    justify-content: end;
+    display        : flex;
+    align-content  : center;
+    font-size: 2.5rem;
 }
 
 
@@ -204,8 +207,8 @@ footer {
     }
 
     .header .menu {
-        clear: none;
-        float: right;
+        clear     : none;
+        float     : right;
         max-height: none;
     }
 
