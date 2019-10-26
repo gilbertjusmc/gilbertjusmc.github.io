@@ -7,16 +7,36 @@ html {
 }
 
 body {
-    background-color: rgb(199, 199, 199);
     height          : 100%;
     margin          : 0;
-    line-height     : 1.2;
+}
+
+.landing-page {
+    background: #fefefe url("/images/asphalt-dark-dawn-531321.jpg") no-repeat center center/cover fixed;
+    color: #fefefe;
+    height: 100vh; 
+    text-align: center;
+    padding-top: 15rem;
+}
+
+.landing-page h1 {
+    font-size: 4rem;
+}
+
+.landing-page h2 {
+   margin: 2rem 0; 
+}
+
+.landing-page .btn-light {
+    font-size: .75rem;
 }
 
 .btn, .btn-dark, .btn-light {
     display      : inline-block;
-    padding      : 0.5rem 1rem;
-    border       : 0;
+    text-decoration: none;
+    padding      : 0.75rem 2rem;
+    border-radius: 1rem;
+    border: .02rem solid #fefefe;
     margin-bottom: 0.3rem;
 }
   
@@ -27,11 +47,11 @@ body {
   
 .btn-dark {
     background: black;
-    color     : #fff;
+    color     : #adb1bb;
 }
   
 .btn-light {
-    background: #fff;
+    background: #adb1bb;
     color     : black;
 }
 
@@ -131,10 +151,7 @@ body {
 
 .projects {
     display: flex;
-}
-
-.projects .card {
-    align-content: center;
+    text-align: center;
 }
 
 .projects img {
