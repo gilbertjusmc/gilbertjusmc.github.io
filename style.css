@@ -144,10 +144,6 @@ body {
     border-radius: 1.75rem;
 }
 
-
-
-
-
 @media (min-width: 48em) {
     .header li {
         float: left;
