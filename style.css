@@ -4,9 +4,11 @@
 
 html {
     font-size: 10px;  /* Sets the standard conversion for rem, vh etc... */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
+    background-color: rgba(133, 119, 95, .25);
     height          : 100%;
     margin          : 0;
 }
@@ -35,9 +37,8 @@ body {
     display      : inline-block;
     text-decoration: none;
     padding      : 0.75rem 2rem;
-    border-radius: 1rem;
-    border: .02rem solid #fefefe;
-    margin-bottom: 0.3rem;
+    border-radius: .6rem;
+    border: .04rem solid #fefefe;
 }
   
 .btn:hover, .btn-dark:hover, .btn-light:hover {
@@ -47,15 +48,17 @@ body {
   
 .btn-dark {
     background: black;
-    color     : #adb1bb;
+    color     : rgba(133, 119, 95, 1);
 }
   
 .btn-light {
-    background: #adb1bb;
+    background: rgba(133, 119, 95, .75);
     color     : black;
 }
 
 .header { 
+    color: #fefefe;
+    text-decoration: none;
     padding: 0;
     margin: 0;
     position: fixed;
@@ -64,17 +67,19 @@ body {
 }
 
 .header ul {
+    color: #fefefe;
+    text-decoration: none;
     margin          : 0;
     padding         : 0;
     list-style      : none;
     overflow        : hidden;
-    background-color: #adb1bb;
 }
 
 .header ul a {
+    color: #fefefe;
+    text-decoration: none;
     display        : block;
-    padding        : 10px;
-    border-right   : 1px solid #aaa;
+    padding        : 1rem;
     text-decoration: none;
 }
 
@@ -89,41 +94,38 @@ body {
 }
 
 .header .menu-icon {
-    padding : 20px 20px;
+    padding : 2rem 2rem;
     position: relative;
     float   : right;
     cursor  : pointer;
 }
 
 .header .menu-icon .nav-icon {
-    background: #adb1bb;
     display   : block;
-    height    : 2px;
-    width     : 18px;
+    height    : .2rem;
+    width     : 1.2rem;
     position  : relative;
     transition: background .2s ease-out;
     box-shadow: 1px #adb1bb;
 }
 
 .header .menu-icon .nav-icon:before {
-    background: #adb1bb;
     content   : '';
     display   : block;
     height    : 100%;
     width     : 100%;
     position  : absolute;
-    top       : 5px;
+    top       :.5rem;
     transition: all .2s ease-out;
 }
 
 .header .menu-icon .nav-icon:after {
-    background: #adb1bb;
     content   : '';
     display   : block;
     height    : 100%;
     width     : 100%;
     position  : absolute;
-    top       : -5px;
+    top       : -.5rem;
     transition: all .2s ease-out;
 }
 
@@ -132,7 +134,7 @@ body {
 }
 
 .header .menu-btn:checked ~ .menu {
-    max-height: 240px;
+    max-height: 24rem;
 }
 
 .header .menu-btn:checked ~ .menu-icon .nav-icon {
@@ -161,13 +163,17 @@ body {
     border-radius: 1.75rem;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 770px) {
     .header li {
         float: left;
     }
 
     .header li a {
-        padding: 20px 30px;
+        font-size: 2rem;
+        float: left;
+        color: #fefefe;
+        text-shadow: black;
+        padding: 2rem 3rem;
     }
 
     .header .menu {
@@ -182,6 +188,18 @@ body {
 
     .projects {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .landing-page h1{
+        font-size: 8rem;
+    }
+
+    .landing-page h2 {
+        font-size: 6rem;
+    }
+
+    .landing-page .btn-light {
+        font-size: 3rem;
     }
 }
