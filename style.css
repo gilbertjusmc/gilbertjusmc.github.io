@@ -13,6 +13,11 @@ body {
     margin          : 0;
 }
 
+.project-item h3 {
+    font-size: 2.5rem;
+    padding: 0;
+}
+
 .landing-page {
     background: #fefefe url("/images/asphalt-dark-dawn-531321.jpg") no-repeat center center/cover fixed;
     color: #fefefe;
@@ -21,31 +26,37 @@ body {
     padding-top: 15rem;
 }
 
+.landing-page {
+    text-shadow: #000000 1px 0 10px;
+}
+
 .landing-page h1 {
     font-size: 4rem;
 }
 
 .landing-page h2 {
-   margin: 2rem 0; 
+    font-size: 2.5rem;
+    margin: 2rem; 
 }
 
 .landing-page .btn-light {
-    font-size: .75rem;
+    font-size: 1.5rem;
 }
 
 .btn, .btn-dark, .btn-light {
     display      : inline-block;
+    font-size: 2rem;
     text-decoration: none;
     padding      : 0.75rem 2rem;
     border-radius: .6rem;
     border: .04rem solid #fefefe;
 }
-  
+/* 
 .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #024478;
     color     : #fefefe;
 }
-  
+*/  
 .btn-dark {
     background: black;
     color     : rgba(133, 119, 95, 1);
@@ -57,7 +68,7 @@ body {
 }
 
 .header { 
-    color: #fefefe;
+    color: white;
     text-decoration: none;
     padding: 0;
     margin: 0;
@@ -67,7 +78,7 @@ body {
 }
 
 .header ul {
-    color: #fefefe;
+    color: white;
     text-decoration: none;
     margin          : 0;
     padding         : 0;
@@ -76,7 +87,7 @@ body {
 }
 
 .header ul a {
-    color: #fefefe;
+    color: white;
     text-decoration: none;
     display        : block;
     padding        : 1rem;
@@ -163,6 +174,17 @@ body {
     border-radius: 1.75rem;
 }
 
+.aboutMe h2 {
+    text-align: center;
+    font-size: 2rem;
+    background-color: white; /* remove later*/
+}
+
+.contact {
+    text-align: center;
+    font-size: 2rem;
+}
+
 @media (min-width: 770px) {
     .header li {
         float: left;
@@ -193,6 +215,8 @@ body {
 
     .landing-page h1{
         font-size: 8rem;
+        padding: 1rem;
+        margin: 1rem;
     }
 
     .landing-page h2 {
