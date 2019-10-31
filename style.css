@@ -1,9 +1,16 @@
+/*:root {
+    --main-color: ;
+    --primary-text: ;
+    --
+}
+*/
+
 * {
     box-sizing: border-box;
 }
 
 html {
-    font-size: 10px;  /* Sets the standard conversion for rem, vh etc... */
+    font-size: 10px;  /* Sets the standard conversion for rem */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -11,11 +18,6 @@ body {
     background-color: rgba(133, 119, 95, .25);
     height          : 100%;
     margin          : 0;
-}
-
-.project-item h3 {
-    font-size: 2.5rem;
-    padding: 0;
 }
 
 .landing-page {
@@ -27,7 +29,7 @@ body {
 }
 
 .landing-page {
-    text-shadow: #000000 1px 0 10px;
+    text-shadow: #000000 3px 1px 8px;
 }
 
 .landing-page h1 {
@@ -41,6 +43,7 @@ body {
 
 .landing-page .btn-light {
     font-size: 1.5rem;
+    
 }
 
 .btn, .btn-dark, .btn-light {
@@ -51,24 +54,18 @@ body {
     border-radius: .6rem;
     border: .04rem solid #fefefe;
 }
-/* 
-.btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #024478;
-    color     : #fefefe;
-}
-*/  
+
 .btn-dark {
     background: black;
     color     : rgba(133, 119, 95, 1);
 }
   
 .btn-light {
-    background: rgba(133, 119, 95, .75);
+    background: rgba(133, 119, 95, 1);
     color     : black;
 }
 
 .header { 
-    color: white;
     text-decoration: none;
     padding: 0;
     margin: 0;
@@ -78,7 +75,9 @@ body {
 }
 
 .header ul {
-    color: white;
+    background-color: rgba(133, 119, 95, .4);
+    color: #adb1bb;
+    font-size: 1.5rem;
     text-decoration: none;
     margin          : 0;
     padding         : 0;
@@ -87,57 +86,56 @@ body {
 }
 
 .header ul a {
-    color: white;
+    color: #adb1bb;
     text-decoration: none;
     display        : block;
     padding        : 1rem;
     text-decoration: none;
 }
 
-.header ul a:hover {
-    background-color: #adb1bb;
-}
-
 .header .menu {
-    clear     : both;
+    /*clear     : both; IF USING A LOGO*/
     max-height: 0;
     transition: max-height .2s ease-out;
 }
 
 .header .menu-icon {
-    padding : 2rem 2rem;
+    padding : 3rem 3rem;
     position: relative;
     float   : right;
     cursor  : pointer;
 }
 
 .header .menu-icon .nav-icon {
+    background: #adb1bb;
     display   : block;
     height    : .2rem;
-    width     : 1.2rem;
+    width     : 1.6rem;
     position  : relative;
-    transition: background .2s ease-out;
-    box-shadow: 1px #adb1bb;
+    transition: background .1s ease-out;
+    box-shadow: 1px black;
 }
 
 .header .menu-icon .nav-icon:before {
+    background: #adb1bb;
     content   : '';
     display   : block;
     height    : 100%;
     width     : 100%;
     position  : absolute;
     top       :.5rem;
-    transition: all .2s ease-out;
+    transition: all .1s ease-out;
 }
 
 .header .menu-icon .nav-icon:after {
+    background: #adb1bb;
     content   : '';
     display   : block;
     height    : 100%;
     width     : 100%;
     position  : absolute;
     top       : -.5rem;
-    transition: all .2s ease-out;
+    transition: all .1s ease-out;
 }
 
 .header .menu-btn {
@@ -145,7 +143,7 @@ body {
 }
 
 .header .menu-btn:checked ~ .menu {
-    max-height: 24rem;
+    max-height: 20rem;
 }
 
 .header .menu-btn:checked ~ .menu-icon .nav-icon {
@@ -167,10 +165,17 @@ body {
     text-align: center;
 }
 
+.project-title {
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 1rem;
+}
+
 .projects img {
     display: grid;
     width: 100%;
     padding: 1rem;
+    margin: 0;
     border-radius: 1.75rem;
 }
 
@@ -208,7 +213,16 @@ body {
         display: none;
     }
 
-    .projects {
+    .header ul a:hover {
+        background-color: #adb1bb;
+    }
+
+    .btn:hover, .btn-dark:hover, .btn-light:hover {
+        background: #024478;
+        color     : #fefefe;
+    }
+
+    .project-main {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
