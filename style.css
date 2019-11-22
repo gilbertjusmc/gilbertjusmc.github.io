@@ -176,6 +176,12 @@ body {
     border-radius: 1.75rem;
 }
 
+.api-container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+}
+
 .aboutMe {
     text-align: center;
     font-size: 2rem;
