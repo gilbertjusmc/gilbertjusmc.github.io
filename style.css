@@ -6,260 +6,285 @@
 */
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-    font-size: 10px;  /* Sets the standard conversion for rem */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 10px;
+	/* Sets the standard conversion for rem */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: rgba(133, 119, 95, .25);
-    height          : 100%;
-    margin          : 0;
+	background-color: rgba(133, 119, 95, .25);
+	height: 100%;
+	margin: 0;
 }
 
 .landing-page {
-    background: #fefefe url("/images/asphalt-dark-dawn-531321.jpg") no-repeat center center/cover fixed;
-    color: #fefefe;
-    height: 100vh; 
-    text-align: center;
-    padding-top: 15rem;
+	background: #fefefe url("/images/asphalt-dark-dawn-531321.jpg") no-repeat center center/cover fixed;
+	color: #fefefe;
+	height: 100vh;
+	text-align: center;
+	padding-top: 15rem;
 }
 
 .landing-page h1 {
-    font-size: 4rem;
-    text-shadow: #000000 3px 1px 8px;
+	font-size: 4rem;
+	text-shadow: #000000 3px 1px 8px;
 }
 
 .landing-page h2 {
-    font-size: 2.5rem;
-    margin: 2rem; 
-    text-shadow: #000000 3px 1px 8px;
+	font-size: 2.5rem;
+	margin: 2rem;
+	text-shadow: #000000 3px 1px 8px;
 }
 
 .landing-page .btn-light {
-    font-size: 2rem;
-    
+	font-size: 2rem;
+
 }
 
-.btn, .btn-dark, .btn-light {
-    display      : inline-block;
-    font-size: 2rem;
-    text-decoration: none;
-    padding      : 0.75rem 2rem;
-    border-radius: .6rem;
+.btn,
+.btn-dark,
+.btn-light {
+	display: inline-block;
+	font-size: 2rem;
+	text-decoration: none;
+	padding: 0.75rem 2rem;
+	border-radius: .6rem;
 }
 
 .btn-dark {
-    background: black;
-    color     : rgba(133, 119, 95, 1);
-}
-  
-.btn-light {
-    background: rgba(133, 119, 95, 1);
-    color     : black;
+	background: black;
+	color: rgba(133, 119, 95, 1);
 }
 
-.header { 
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-    position: fixed;
-    width: 100%;
-    z-index : 2;
+.btn-light {
+	background: rgba(133, 119, 95, 1);
+	color: black;
+}
+
+.header {
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
 }
 
 .header ul {
-    background-color: rgba(133, 119, 95, .7);
-    color: #adb1bb;
-    font-size: 1.5rem;
-    text-decoration: none;
-    margin          : 0;
-    padding         : 0;
-    list-style      : none;
-    overflow        : hidden;
+	background-color: rgba(133, 119, 95, .7);
+	color: #adb1bb;
+	font-size: 1.5rem;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
 }
 
 .header ul a {
-    color: #adb1bb;
-    text-decoration: none;
-    display        : block;
-    padding        : 1rem;
-    text-decoration: none;
+	color: #adb1bb;
+	text-decoration: none;
+	display: block;
+	padding: 1rem;
+	text-decoration: none;
 }
 
 .header .menu {
-    /*clear     : both; IF USING A LOGO*/
-    max-height: 0;
-    transition: max-height .2s ease-out;
+	/*clear     : both; IF USING A LOGO*/
+	max-height: 0;
+	transition: max-height .2s ease-out;
 }
 
 .header .menu-icon {
-    padding : 3rem 3rem;
-    position: relative;
-    float   : right;
-    cursor  : pointer;
+	padding: 3rem 3rem;
+	position: relative;
+	float: right;
+	cursor: pointer;
 }
 
 .header .menu-icon .nav-icon {
-    background: #adb1bb;
-    display   : block;
-    height    : .2rem;
-    width     : 1.6rem;
-    position  : relative;
-    transition: background .25s ease-out;
-    box-shadow: 1px black;
+	background: #adb1bb;
+	display: block;
+	height: .2rem;
+	width: 1.6rem;
+	position: relative;
+	transition: background .25s ease-out;
+	box-shadow: 1px black;
 }
 
 .header .menu-icon .nav-icon:before {
-    background: #adb1bb;
-    content   : '';
-    display   : block;
-    height    : 100%;
-    width     : 100%;
-    position  : absolute;
-    top       :.5rem;
-    transition: all .25s ease-out;
+	background: #adb1bb;
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: .5rem;
+	transition: all .25s ease-out;
 }
 
 .header .menu-icon .nav-icon:after {
-    background: #adb1bb;
-    content   : '';
-    display   : block;
-    height    : 100%;
-    width     : 100%;
-    position  : absolute;
-    top       : -.5rem;
-    transition: all .25s ease-out;
+	background: #adb1bb;
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: -.5rem;
+	transition: all .25s ease-out;
 }
 
 .header .menu-btn {
-    display: none;
+	display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
-    max-height: 20rem;
+.header .menu-btn:checked~.menu {
+	max-height: 20rem;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon {
-    background: transparent;
+.header .menu-btn:checked~.menu-icon .nav-icon {
+	background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
-    transform: rotate(-45deg);
-    top      : 0;
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
+	transform: rotate(-45deg);
+	top: 0;
 }
 
-.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
-    transform: rotate(45deg);
-    top      : 0;
-} 
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
+	transform: rotate(45deg);
+	top: 0;
+}
 
 .projects {
-    display: flex;
-    text-align: center;
+	display: flex;
+	text-align: center;
 }
 
 .project-title {
-    font-size: 2.5rem;
-    padding: 0;
-    margin: 1rem;
+	font-size: 2.5rem;
+	padding: 0;
+	margin: 1rem;
 }
 
 .projects img {
-    display: grid;
-    width: 100%;
-    padding: 1rem;
-    margin: 0;
-    border-radius: 1.75rem;
+	display: grid;
+	width: 100%;
+	padding: 1rem;
+	margin: 0;
+	border-radius: 1.75rem;
 }
 
+/* API START */
 .api-container {
-    display: grid;
-    text-align: center;
-    grid-template-columns: 1fr;
+	display: grid;
+	text-align: center;
+	grid-template-columns: 1fr;
 }
+
+#output-name {
+	font-size: 2.5rem;
+}
+
+#output-ingredients {
+	font-size: 2rem;
+}
+
+#output-instruct {
+	font-size: 1.8rem;
+	padding: .2rem .2rem;
+}
+
+
+
+/* API END */
 
 .aboutMe {
-    text-align: center;
-    font-size: 2rem;
-    background-color: white; /* remove later*/
+	text-align: center;
+	font-size: 2rem;
+	background-color: white;
+	/* remove later*/
 }
 
 .contact {
-    text-align: center;
-    font-size: 2rem;
+	padding-top: 1rem;
+	text-align: center;
+	font-size: 2rem;
 }
 
 footer p {
-    text-align: center;
-    font-size: 2rem;
+	text-align: center;
+	font-size: 2rem;
 }
-  
+
 @media (min-width: 770px) {
 
-    .header {
-        position: relative;
-    }
+	.header {
+		position: relative;
+	}
 
-    .header ul {
-        background-color: transparent;
-    }
+	.header ul {
+		background-color: transparent;
+	}
 
-    .header li {
-        float: left;
-    }
+	.header li {
+		float: left;
+	}
 
-    .header li a {
-        font-size: 2rem;
-        float: left;
-        color: #fefefe;
-        text-shadow: black;
-        padding: 2rem 3rem;
-    }
+	.header li a {
+		font-size: 2rem;
+		float: left;
+		color: #fefefe;
+		text-shadow: black;
+		padding: 2rem 3rem;
+	}
 
-    .header .menu {
-        clear     : none;
-        float     : right;
-        max-height: none;
-    }
+	.header .menu {
+		clear: none;
+		float: right;
+		max-height: none;
+	}
 
-    .header .menu-icon {
-        display: none;
-    }
+	.header .menu-icon {
+		display: none;
+	}
 
-    .header ul a:hover {
-        background-color: #adb1bb;
-    }
+	.header ul a:hover {
+		background-color: #adb1bb;
+	}
 
-    .btn:hover, .btn-dark:hover, .btn-light:hover {
-        background: #024478;
-        color     : #fefefe;
-    }
+	.btn:hover,
+	.btn-dark:hover,
+	.btn-light:hover {
+		background: #024478;
+		color: #fefefe;
+	}
 
-    .project-main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+	.project-main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 
-    .project-item img {
-        cursor: default;
-    }
+	.project-item img {
+		cursor: default;
+	}
 
-    .landing-page h1{
-        font-size: 8rem;
-        padding: 1rem;
-        margin: 2rem;
-        margin-top: 20rem;
-    }
+	.landing-page h1 {
+		font-size: 8rem;
+		padding: 1rem;
+		margin: 2rem;
+		margin-top: 20rem;
+	}
 
-    .landing-page h2 {
-        font-size: 6rem;
-    }
+	.landing-page h2 {
+		font-size: 6rem;
+	}
 
-    .landing-page .btn-light {
-        font-size: 3rem;
-    }
+	.landing-page .btn-light {
+		font-size: 3rem;
+	}
 }
