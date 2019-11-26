@@ -82,3 +82,13 @@
 </body>
 
 </html>
+
+
+
+button.addEventlistener(“click”, reset =() =>{
+let resetBtn = document.getElementById(“api-btn”);
+resetBtn.parentNode.removeChild(resetBtn)
+}));
+
+
+Or something along those lines. Then put the reset() function at the beginning of your getDrink() function so it resets first then builds the child elements
