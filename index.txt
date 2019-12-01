@@ -92,3 +92,88 @@ resetBtn.parentNode.removeChild(resetBtn)
 
 
 Or something along those lines. Then put the reset() function at the beginning of your getDrink() function so it resets first then builds the child elements
+
+//TODO play around with the code below.
+// function zip(arrays) {
+//   return arrays[0].map(function(_,i){
+//       return arrays.map(function(array){return array[i]})
+//   });
+// }
+// var getDrink = async function () {
+// let result = await fetch(url)
+// await console.log(result)
+// let drink = result.drinks[0];
+//     let keys = Object.keys(drink);
+//     let ingredients = keys
+//       .map(key => {
+//         if (key.indexOf("strIngredient") === 0) {
+//           return drink[key];
+//         }
+//       })
+//       .filter(value => {
+//         return value;
+//       });
+//     let measure = keys
+//       .map(key => {
+//         if (key.indexOf('strMeasure') === 0) {
+//           return drink[key]
+//         };
+//       }).filter(value => {
+//         return value
+//       });
+//       let pairedIngredients = zip(ingredients, measure)
+// return [drink.strdrink, pairedIngredients, drink.instructions]
+// }
+// getDrink().then(res => {
+// displayDrinkIngredients.innerHTML = res[0]
+// displayDrinkIngredients.innerHTML = //Figure it output
+// displayInstructions.innerHTML = res[2]
+// })
+// Benjamin Winchester 7:40 PM
+// zip([1,2,3],[4,5,6])
+// returns
+// [[1,4],[2,5],[3,6]]
+// Steve Clark 7:41 PM
+// let newArr = [(...arr1, ...arr2)]
+// Benjamin Winchester 7:45 PM
+// function zip(arrays) {
+//   return arrays[0].map(function(_,i){
+//       return arrays.map(function(array){return array[i]})
+//   });
+// }
+// var getDrink = async function () {
+// let result = await fetch(url)
+// await console.log(result)
+// let drink = result.drinks[0];
+//     let keys = Object.keys(drink);
+//     let ingredients = keys
+//       .map(key => {
+//         if (key.indexOf("strIngredient") === 0) {
+//           return drink[key];
+//         }
+//       })
+//       .filter(value => {
+//         return value;
+//       });
+//     let measure = keys
+//       .map(key => {
+//         if (key.indexOf('strMeasure') === 0) {
+//           return drink[key]
+//         };
+//       }).filter(value => {
+//         return value
+//       });
+//       let pairedIngredients = zip(ingredients, measure)
+// return [drink.strdrink, pairedIngredients, drink.instructions]
+// }
+// getDrink().then(res => {
+// let ingredient
+// displayDrinkIngredients.innerHTML = ""
+// res[1].forEach(pair, index) => {
+//   ingredient = document.createTextNode("p")
+//   ingredient.innerHTML = `${pair[0]}: ${pair[1]}`
+//   displayDrinkIngredients.appendChild(ingredient)
+// }
+// displayDrinkName.innerHTML = res[0]
+// displayInstructions.innerHTML = res[2]
+// })

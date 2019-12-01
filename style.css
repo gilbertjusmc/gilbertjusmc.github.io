@@ -184,6 +184,7 @@ body {
 	display: grid;
 	text-align: center;
 	grid-template-columns: 1fr;
+	background-color: white;
 }
 
 #output-name {
