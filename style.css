@@ -163,6 +163,8 @@ body {
 .projects {
 	display: flex;
 	text-align: center;
+	border: solid white .2rem;
+	padding-bottom: 1rem;
 }
 
 .project-title {
