@@ -1,4 +1,7 @@
 const url = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
+const poweredBy = url.split(".");
+const poweredByDisplay = document.getElementById("output-footer");
+console.log(poweredBy);
 const displayDrinkName = document.getElementById("output-name");
 const displayImage = document.getElementById("output-img");
 const displayDrinkIngredients = document.getElementById("output-ingredients");
@@ -75,10 +78,14 @@ button.addEventListener(
     let drinkTitle = document.getElementById("drinkTitle");
     let ingred = document.getElementById("output-ingredients");
     let instruct = document.getElementById("instructions");
-    while (ingred.hasChildNodes()) {
-      ingred.removeChild(ingred.firstChild);
-    };
-    drinkTitle.parentNode.removeChild(drinkTitle);
-    instruct.parentNode.removeChild(instruct);
+    let display = document.querySelectorAll('.display');
+    if (display.hasChildNodes) {
+      while (ingred.hasChildNodes()) {
+        ingred.removeChild(ingred.firstChild);
+      }
+
+      drinkTitle.parentNode.removeChild(drinkTitle);
+      instruct.parentNode.removeChild(instruct);
+    }
   })
 );
